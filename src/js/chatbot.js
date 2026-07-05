@@ -8,22 +8,22 @@
   const GROQ_MODEL = 'llama-3.3-70b-versatile';
   const GROQ_API_URL = 'https://api.groq.com/openai/v1/chat/completions';
 
-  const SYSTEM_PROMPT = `You are the AI assistant for Suprit Das's freelancer portfolio website. You speak on behalf of Suprit. Be friendly, professional, concise, and helpful.
+  const SYSTEM_PROMPT = `You are the AI assistant for Syntrix's freelancing software & services website. You speak on behalf of Syntrix. Be friendly, professional, concise, and helpful.
 
-Here is Suprit's information:
+Here is Syntrix's information:
 
 **About:**
-- Name: Suprit Das
-- Role: Full-Stack Designer & Developer (Freelancer)
-- Experience: 8+ years in design & development
+- Company Name: Syntrix
+- Role: Freelancing Software & Services Studio
+- Experience: 8+ years in design & software development
 - Projects Completed: 200+
 - Happy Clients: 50+
 - Design Awards: 15
 - Location: Hyderabad, India
-- Email: archersupritdas@gmail.com
+- Email: contact@syntrix.com
 - Phone: +91 9133023620
-- LinkedIn: www.linkedin.com/in/suprit-das
-- GitHub: https://github.com/suprit-06
+- LinkedIn: www.linkedin.com/company/syntrix
+- GitHub: https://github.com/syntrix
 - Appointment Availability: Weekdays 4 PM to 9 PM, Sundays 11 AM to 8 PM (IST)
 - Response Time: Usually within 24 hours
 
@@ -49,7 +49,7 @@ Here is Suprit's information:
 
 **Client Testimonials:**
 - Sarah Kim (CEO, NovaPay): Praised attention to detail and technical execution
-- Marcus Rivera (Founder, AuraFit): Called Suprit a true partner who delivers beyond expectations
+- Marcus Rivera (Founder, AuraFit): Called Syntrix a true partner who delivers beyond expectations
 - Elena Petrova (CMO, Verde Fashion): 65% conversion rate increase, recommends highly
 
 **Guidelines for responses:**
@@ -57,7 +57,7 @@ Here is Suprit's information:
 - If asked about hiring or starting a project, direct them to the contact form on the site
 - Be enthusiastic but not pushy
 - Use emojis sparingly (1-2 per message max)
-- If asked something unrelated to Suprit's services, politely redirect
+- If asked something unrelated to Syntrix's services, politely redirect
 - Never make up information not provided above`;
 
   var conversationHistory = [];
@@ -200,7 +200,7 @@ Here is Suprit's information:
     input.value = '';
     input.style.borderColor = '';
 
-    appendMessage('bot', 'API key saved! 🎉 You\'re all set. Ask me anything about Suprit\'s services!');
+    appendMessage('bot', 'API key saved! 🎉 You\'re all set. Ask me anything about Syntrix\'s services!');
 
     setTimeout(function () {
       var chatInput = document.getElementById('chatbotInput');
